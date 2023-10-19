@@ -1,0 +1,273 @@
+{% extends "base.html" %}
+<!--=================================
+breadcrumb -->
+{% block content %}
+<div class="bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <ol class="breadcrumb mb-0">
+          <li class="breadcrumb-item"><a href="index.html"> <i class="fas fa-home"></i> </a></li>
+          <li class="breadcrumb-item"> <i class="fas fa-chevron-right"></i> <a href="#">Pages</a></li>
+          <li class="breadcrumb-item active"> <i class="fas fa-chevron-right"></i> <span>My profile</span></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+<!--=================================
+breadcrumb -->
+
+<!--=================================
+My profile -->
+<section class="space-ptb">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 mb-5">
+        <div class="profile-sidebar bg-holder bg-overlay-black-70" style="background-image: url(images/banner-01.jpg);">
+          <div class="d-sm-flex align-items-center position-relative">
+            <div class="profile-avatar">
+              <img class="img-fluid  rounded-circle" src="images/agent/04.jpg" alt="">
+            </div>
+            <div class="ms-sm-4">
+              <h4 class="text-white">Alice Williams</h4>
+              <b class="text-white">alicewilliams@gmail.com</b>
+            </div>
+            <div class="ms-auto my-4 mt-sm-0">
+              <a class="btn btn-white btn-md" href="submit-property.html"> <i class="fa fa-plus-circle"></i>Add listing </a>
+            </div>
+          </div>
+          <div class="profile-nav">
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="account-profile.html"><i class="far fa-user"></i> Edit Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="account-my-properties.html"><i class="far fa-bell"></i>My properties</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="account-agency-management.html"><i class="far fa-edit"></i> Agency Management</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="account-saved-homes.html"><i class="fas fa-home"></i> Saved Homes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="account-saved-rental.html"><i class="fas fa-truck-moving"></i> Saved Rentals</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="section-title d-flex align-items-center">
+          <h2>Edit profile </h2>
+          <span class="ms-auto">Joined Mar 18, 2019</span>
+        </div>
+        <form>
+          <div class="row">
+            <div class="form-group col-md-6 mb-3">
+              <label class="mb-2">User name</label>
+              <input type="text" class="form-control" value="Alice Williams">
+            </div>
+            <div class="form-group col-md-6 mb-3">
+              <label class="mb-2">Email address</label>
+              <input type="text" class="form-control" value="support@realvilla.demo">
+            </div>
+            <div class="form-group col-md-6 mb-3">
+              <label class="mb-2">Phone number</label>
+              <input type="text" class="form-control" value="(123) 345-6789">
+            </div>
+            <div class="form-group col-md-6 mb-3 select-border">
+              <label class="mb-2">User type</label>
+              <select class="form-control basic-select">
+                <option value="value 01" selected="selected">Home Buyer</option>
+                <option value="value 02">Home Seller</option>
+                <option value="value 03">Both Buyer and Seller</option>
+                <option value="value 04">Home Owner</option>
+                <option value="value 05">Renter</option>
+                <option value="value 06">Other/Just Looking</option>
+              </select>
+            </div>
+            <div class="form-group col-md-6 mb-3">
+              <label class="mb-2">Location</label>
+              <input type="text" class="form-control" value="New York, NY">
+            </div>
+            <div class="form-group col-md-6 mb-3">
+              <div class="d-flex align-items-center">
+                <label class="mb-2">Password</label>
+                <a class="ms-auto mb-2" href="#">Edit</a>
+              </div>
+              <input type="password" class="form-control" value="1234567892">
+            </div>
+            <div class="form-group col-md-12 mb-3">
+              <label class="mb-2">About Me</label>
+              <textarea class="form-control" rows="4" value="About me"></textarea>
+            </div>
+            <div class="col-md-12">
+              <a class="btn btn-primary" href="#">Save Changes</a>
+            </div>
+          </div>
+        </form>
+        <hr class="my-5" />
+        <div class="mb-5">
+          <h6>Upload your ID</h6>
+          <p>To ensure the safety of agents, we need you to provide your identity before we can take you on a home tour.</p>
+          <div class="input-group file-upload">
+            <input type="file" class="form-control" id="customFile">
+            <label class="input-group-text" for="customFile">Choose file</label>
+          </div>
+        </div>
+        <div class="mb-2">
+          <h6>Delete Account?</h6>
+          <p>This will remove your login information from our system, and you will not be able to login again. It cannot be undone.</p>
+          <a class="btn btn-danger" href="#">Yes Delete My Account</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--=================================
+My profile -->
+
+<!--=================================
+newsletter -->
+<section class="py-5 bg-primary">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5">
+        <h3 class="text-white mb-0">Sign up to our newsletter to get the latest news and offers.</h3>
+      </div>
+      <div class="col-md-7 mt-3 mt-md-0">
+        <div class="newsletter">
+          <form>
+            <div class="form-group mb-0">
+              <input type="email" class="form-control" placeholder="Enter email">
+            </div>
+            <button type="submit" class="btn btn-dark b-radius-left-none">Get notified</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--=================================
+newsletter -->
+
+<!--=================================
+footer-->
+<footer class="footer bg-dark space-pt">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-6">
+        <div class="footer-contact-info">
+          <h5 class="text-primary mb-4">About real villa</h5>
+          <p class="text-white mb-4">Real Villa helped thousands of clients to find the right property for their needs.</p>
+          <ul class="list-unstyled mb-0">
+            <li> <b> <i class="fas fa-map-marker-alt"></i></b><span>214 West Arnold St. New York, NY 10002</span> </li>
+            <li> <b><i class="fas fa-microphone-alt"></i></b><span>(123) 345-6789</span> </li>
+            <li> <b><i class="fas fa-headset"></i></b><span>support@realvilla.demo</span> </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mt-4 mt-md-0">
+        <div class="footer-link">
+          <h5 class="text-primary mb-4">Useful links</h5>
+          <ul class="list-unstyled mb-0">
+            <li> <a href="#">Commercial </a> </li>
+            <li> <a href="#">House </a> </li>
+            <li> <a href="#">Office </a> </li>
+            <li> <a href="#">Residential </a> </li>
+            <li> <a href="#">Residential Tower </a> </li>
+          </ul>
+          <ul class="list-unstyled mb-0">
+            <li> <a href="#">Beverly Hills </a> </li>
+            <li> <a href="#">Los angeles </a> </li>
+            <li> <a href="#">Mission Viejo </a> </li>
+            <li> <a href="#">Newport  </a> </li>
+            <li> <a href="#">Beach Pasadena </a> </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
+        <div class="footer-recent-List">
+          <h5 class="text-primary mb-4">Recently listed properties</h5>
+          <ul class="list-unstyled mb-0">
+            <li>
+              <div class="footer-recent-list-item">
+                <img class="img-fluid" src="images/property/list/01.jpg" alt="">
+                <div class="footer-recent-list-item-info">
+                  <h6 class="text-white"><a class="category font-md mb-2" href="property-detail-style-01.html">Awesome family home</a></h6>
+                  <a class="address mb-2 font-sm" href="#">Vermont dr. hephzibah</a>
+                  <span class="price text-white">$3,456,235 </span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="footer-recent-list-item">
+                <img class="img-fluid" src="images/property/list/02.jpg" alt="">
+                <div class="footer-recent-list-item-info">
+                  <h6 class="text-white"><a class="category font-md mb-2" href="property-detail-style-01.html">Lawn court villa</a></h6>
+                  <a class="address mb-2 font-sm" href="#">Newport st. mebane, nc</a>
+                  <span class="price text-white">$1,265,456 </span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
+        <h5 class="text-primary mb-4">Subscribe us</h5>
+        <div class="footer-subscribe">
+          <p class="text-white">Sign up to our newsletter to get the latest news and offers.</p>
+          <form>
+            <div class="form-group mb-3">
+              <input type="email" class="form-control" placeholder="Enter email">
+            </div>
+            <button type="submit" class="btn btn-primary btn-sm">Get notified</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-4 text-center text-md-start">
+          <a href="index.html"><img class="img-fluid footer-logo" src="images/logo-light.svg" alt=""> </a>
+        </div>
+        <div class="col-md-4 text-center my-3 mt-md-0 mb-md-0">
+          <a id="back-to-top" class="back-to-top" href="#"><i class="fas fa-angle-double-up"></i> </a>
+        </div>
+        <div class="col-md-4 text-center text-md-end">
+          <p class="mb-0 text-white"> &copy;Copyright <span id="copyright"> <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script></span> <a href="#"> Real villa </a> All Rights Reserved </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--=================================
+footer-->
+
+<!--=================================
+Javascript -->
+
+  <!-- JS Global Compulsory (Do not remove)-->
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/popper/popper.min.js"></script>
+  <script src="js/bootstrap/bootstrap.min.js"></script>
+
+  <!-- Page JS Implementing Plugins (Remove the plugin script here if site does not use that feature)-->
+  <script src="js/jquery.appear.js"></script>
+  <script src="js/counter/jquery.countTo.js"></script>
+  <script src="js/owl-carousel/owl.carousel.min.js"></script>
+  <script src="js/select2/select2.full.js"></script>
+  <script src="js/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+  <!-- Template Scripts (Do not remove)-->
+  <script src="js/custom.js"></script>
+
+</body>
+
+<!-- Mirrored from themes.potenzaglobalsolutions.com/html/real-villa/account-profile.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 01 Jun 2023 21:38:12 GMT -->
+</html>
+{% endblock %}
